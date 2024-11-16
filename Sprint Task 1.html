@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Page</title>
+  <style>
+
+
+
+    body {
+      margin: 0;
+    }
+
+    .nav{
+      background-color: #84000f;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+    .logo{
+      margin-left: 20px;
+      color: white;
+    }
+    .menu{
+      margin-right: 10px;
+    }
+      a{
+      margin-right: 10px;
+      color: #d6737d;
+      text-decoration: none;
+    }  
+
+
+
+    .main-news {
+      margin-top: 20px;
+      background-color: #b1dadc;
+      padding: 20px;
+      display: flex;
+    }
+
+    .main-news img {
+      max-width: 250px;
+      margin-right: 20px;
+      border-radius: 5px;
+    }
+
+    .main-news-content h2 {
+      color: #333;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .main-news-content p {
+      font-size: 1em;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .latest-news {
+      padding: 20px;
+    }
+
+    .latest-news h2 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: #333;
+      text-align: center;
+    }
+
+    .news-cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .news-card {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 250px;
+      overflow: hidden;
+      text-align: center;
+      flex: 1;
+    }
+
+    .news-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .news-card-content {
+      padding: 15px;
+    }
+
+    .news-card h3 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .news-card p {
+      font-size: 0.9em;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .read-more {
+      background-color: #8b0000;
+      color: #fff;
+      padding: 8px 15px;
+      text-decoration: none;
+      border-radius: 3px;
+      font-size: 0.9em;
+      display: inline-block;
+    }
+
+    .read-more:hover {
+      background-color: #b22222;
+      padding-block-end: 10px;
+      
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <div class="logo"><h4> BITLAB NEWS</h4></div>
+    <div class="menu">
+    <a href="https://bitlab.kz/">Home</a>
+    <a href="https://qazsporttv.kz/kz/live">Sport</a>
+    <a href="https://qazsporttv.kz/kz/live">Science</a>
+    <a href="https://www.akorda.kz/ru">Politics</a>
+    <a href="https://www.gov.kz/memleket/entities/minfin?lang=ru">Finance</a>  
+
+    </div>
+
+  </div>
+
+  <section class="main-news">
+    <img src="https://valetudo.ru/images/khabib-conor-face-off.jpg">
+    <div class="main-news-content">
+      <h2>Khabib to Conor: "It is the same thing"</h2>
+      <p>It's the same thing as the previous fight. If it's a first round finish, I'd back Conor. From the second and further, then Dustin wins.</p>
+      <p>The Russian – who retired in March with a record of 29-0 with eight knockouts – has submission victories over both McGregor and Poirier, so he knows a thing or two about their game plans and skillsets.</p>
+    </div>
+  </section>
+
+  <section class="latest-news">
+    <h2>Latest news</h2>
+    <div class="news-cards">
+      <div class="news-card">
+        <img src="https://tmssl.akamaized.net//images/foto/galerie/eden-hazard-real-madrid-2022-1675533988-101443.jpg?lm=1675533997">
+        <div class="news-card-content">
+          <h3>Eden Hazard injury update</h3>
+          <p>Real Madrid striker Eden Hazard injured again on last match with Sevilla FC.</p>
+          <a href="https://bleacherreport.com/articles/2605008-eden-hazard-injury-updates-on-chelsea-stars-leg-and-return" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="https://tmssl.akamaized.net//images/foto/galerie/alvaro-morata-1416318751-3053.jpg?lm=1483605795">
+        <div class="news-card-content">
+          <h3>Alvaro Morata scores to Torino</h3>
+          <p>Alvaro Morata scored 2 goals against Torino on 27th round of Serie A.</p>
+          <a href="https://www.transfermarkt.com/alvaro-morata/bilanzdetails/spieler/128223/gegner/416" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="https://i.ytimg.com/vi/IATUT2qzDmU/maxresdefault.jpg">
+        <div class="news-card-content">
+          <h3>Canelo Alvarez rejected GGG rematch</h3>
+          <p>Canelo Alvarez rejected Genadiy Golovkin request to rematch again.</p>
+          <a href="https://www.usatoday.com/story/sports/boxing/2018/04/03/canelo-alvarez-withdraws-rematch-gennady-golovkin-after-failed-drug-test/482969002/#:~:text=Canelo%20Alvarez%20withdraws%20from%20rematch%20with%20Gennady%20Golovkin%20after%20failed%20drug%20tests&text=Canelo%20Alvarez%20withdrew%20from%20his,from%20the%20Nevada%20Athletic%20Commission." class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHwYPGIOoX-rzyF4GUcgCYayF7XilY2aDS8g&s">
+        <div class="news-card-content">
+          <h3>Max Verstappen became a leader</h3>
+          <p>Max Verstappen won the French Grand Prix at Paul Richard circuit.</p>
+          <a href="https://en.wikipedia.org/wiki/Max_Verstappen" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
